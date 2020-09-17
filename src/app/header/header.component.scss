@@ -1,0 +1,44 @@
+nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #222;
+  border-bottom: 1px solid #222;
+  padding: 15px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.navigation{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 0px;
+  width: 100px;
+  height: 50px;
+  background: url(../../assets/Tokyo.png) 0 0/100% 100% no-repeat;
+}
+
+.links{
+  margin: 0 20px;
+}
+
+nav a.red-link{
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:inherit;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.active{
+  background-color: #cc092f;;
+}
