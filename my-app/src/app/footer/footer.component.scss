@@ -1,0 +1,29 @@
+footer{
+  padding: 30px 0 50px;
+  background-color: #222222;
+  display: block;
+  color: white;
+}
+
+.top-side{
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bold{
+  font-weight: 600;
+  letter-spacing: .05rem;
+  line-height: 2;
+}
+
+ol, ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
