@@ -1,15 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { Routes, RouterModule } from '@angular/router';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { GamesComponent } from './games/games.component';
+import { PlayersComponent } from './players/players.component';
+import { StatsComponent } from './stats/stats.component';
 
+
+const appRoutes: Routes = [
+  {path:'mainPage', component:MainPageComponent},
+  {path:'players', component:PlayersComponent},
+  {path:'games', component:GamesComponent},
+  {path:'stats', component:StatsComponent},
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainPageComponent,
+    GamesComponent,
+    PlayersComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     AppRoutingModule
   ],
   providers: [],
